@@ -1,0 +1,14 @@
+$.lang.register('auctionsystem.auto.timer.msg', 'Аукцион закроется через $1 секунд!');
+$.lang.register('auctionsystem.bid', '$1 поставил $2! У нас есть $3?');
+$.lang.register('auctionsystem.bid.usage', 'Usage: !bid (amount)');
+$.lang.register('auctionsystem.closed', 'Аукцион закрыт! Победитель: $1 с $2!');
+$.lang.register('auctionsystem.err.bid.minimum', 'Вы не можете поставить меньше минимума.');
+$.lang.register('auctionsystem.err.closed', 'Аукцион не активен.');
+$.lang.register('auctionsystem.err.increments', 'This auction is in increments of $1!');
+$.lang.register('auctionsystem.err.no.bids', 'Аукцион закрыт. Никто не поставил.');
+$.lang.register('auctionsystem.err.opened', 'Аукцион уже открыт.');
+$.lang.register('auctionsystem.err.points', 'Недостаточно средств для ставки.');
+$.lang.register('auctionsystem.opened', 'Аукцион открыт! Вы можете поставить в инкрементах от $1. Минимальная ставка: $2! Ставьте командой !bid (значение)');
+$.lang.register('auctionsystem.usage', 'Usage: !auction open (increments) (minimum bid) (auto close timer)');
+$.lang.register('auctionsystem.warn', 'Самая большая ставка, это $2 от $1!');
+$.lang.register('auctionsystem.warn.force', 'Аукцион готов закрыться! Самая большая ставка - $2 от $1! У нас есть $3?');

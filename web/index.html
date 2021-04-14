@@ -1,0 +1,190 @@
+<!--
+    Copyright (C) 2016-2020 phantombot.github.io/PhantomBot
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+
+<html style="height: auto; min-height: 100%;">
+    <head>
+        <title>PhantomBot</title>
+        <!-- Meta tags -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Bootstrap 3.3.7 css -->
+        <link rel="stylesheet" href="/common/css/bootstrap.min.css" />
+        <!-- Google font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/common/css/AdminLTE.dark.min.css" />
+        <link rel="stylesheet" href="/common/css/skin-purple.dark.min.css" />
+        <link rel="stylesheet" href="/common/css/pace.min.css" />
+    </head>
+
+    <body class="skin-purple layout-top-nav fixed" style="height: auto; min-height: 100%;">
+        <div class="wrapper" style="height: auto; min-height: 100%;">
+            <!-- Header -->
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <img class="navbar-brand" alt="PhantomBot" src="common/images/logo.png" /> <span class="navbar-brand logo-lg"><b>Phantom</b>Bot [RUS]</span>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a data-toggle="tooltip" data-placement="bottom" title="GitHub" href="https://github.com/PhantomBot/PhantomBot"><i class="fab fa-github fa-lg"></i></a></li>
+                                <li><a data-toggle="tooltip" data-placement="bottom" title="Сайт PhantomBot" href="https://phantombot.github.io/PhantomBot"><i class="fas fa-globe fa-lg"></i></a></li>
+                              <li><a data-toggle="tooltip" data-placement="bottom" title="Сайт Переводчика" href="https://phantombot.github.io/PhantomBot"><i class="fas fa-globe fa-lg"></i></a></li>
+                                <li><a data-toggle="tooltip" data-placement="bottom" title="Discord PhantomBot'a" href="https://discord.gg/YKvMd78"><i class="fab fa-discord fa-lg"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <div class="content">
+                        <div class="col-md-4">
+                            <div class="box box-solid box-primary" id="panel-tab">
+                                <div class="box-header with-border">
+                                    <i class="fas fa-desktop"></i>
+                                    <h3 class="box-title">Панель Управления PhantomBot</h3>
+                                    <div class="box-tools pull-right">
+                                        <!-- Buttons, labels, and many other things can be placed here! -->
+                                        <!-- Here is a label for example -->
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    Запуск панели управления PhantomBot
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box box-solid box-primary" id="yt-tab">
+                                <div class="box-header with-border">
+                                    <i class="fab fa-youtube"></i>
+                                    <h3 class="box-title">YouTube Плеер</h3>
+                                    <div class="box-tools pull-right">
+                                        <!-- Buttons, labels, and many other things can be placed here! -->
+                                        <!-- Here is a label for example -->
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    Запустить YouTube Плеер
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box box-solid box-primary" id="playlist-tab">
+                                <div class="box-header with-border">
+                                    <i class="fas fa-music"></i>
+                                    <h3 class="box-title">Плейлист</h3>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    Открыть плейлист
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box box-solid box-primary" id="oauth-tab">
+                                <div class="box-header with-border">
+                                    <i class="fas fa-key"></i>
+                                    <h3 class="box-title">Настройка OAuth</h3>
+                                    <div class="box-tools pull-right">
+                                        <!-- Buttons, labels, and many other things can be placed here! -->
+                                        <!-- Here is a label for example -->
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    Мастер перезапуска OAuth
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                </div>
+            </div>
+            <footer class="main-footer">
+                    <strong>Copyright &copy; 2016 - <script>document.write(new Date().getFullYear());</script> <a href="https://github.com/PhantomBot/PhantomBot" style="color: #6441a5;">PhantomBot</a></strong>
+            </footer>
+        </div>
+
+        <!-- Load jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+        <!-- Load Bootsrap 3.3.7 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" integrity="sha512-ePSfiGQMIzYzXVQLqWoVC3yxVEHIM5Y3EGh9jPNxpf+hPuLtzPdxJX+lTC3ziPMlDgc5OsM4JThxGwN2DkWEeA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.0/js/adminlte.min.js" integrity="sha512-4LW2vmg8t+drPiNqhkUrtVZ3M/UCyhEhVasHYx7d+mXKjcw/G0BSuQ78FnkzPyWU23QBXtTUrKoPmX95KTLE4A==" crossorigin="anonymous"></script>
+        <!-- Generate the panel links -->
+        <script>
+            $(function() {
+                /**
+                 * @function Gets the window URL for a specific path.
+                 *
+                 * @param  {String} path
+                 * @return {String}
+                 */
+                const getWindowUrl = function(path) {
+                    return window.location.origin + window.location.pathname + path;
+                };
+
+                // Generate panel tab.
+                $('#panel-tab').click(function() {
+                    window.location = getWindowUrl('panel');
+                });
+                $('#panel-tab').css('cursor', 'pointer');
+                
+                $('#yt-tab').click(function() {
+                    window.location = getWindowUrl('ytplayer');
+                });
+                $('#yt-tab').css('cursor', 'pointer');
+                
+                $('#playlist-tab').click(function() {
+                    window.location = getWindowUrl('playlist');
+                });
+                $('#playlist-tab').css('cursor', 'pointer');
+                
+                $('#oauth-tab').click(function() {
+                    window.location = getWindowUrl('oauth');
+                });
+                $('#oauth-tab').css('cursor', 'pointer');
+
+                // Start tooltips.
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </body>
+</html>

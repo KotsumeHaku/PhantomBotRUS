@@ -1,0 +1,163 @@
+<!--
+    Copyright (C) 2016-2021 phantombot.github.io/PhantomBot
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+
+<main>
+    <!-- Header -->
+    <section class="content-header">
+        <h1>Лояльность</h1>
+        <ol class="breadcrumb">
+            <li><a href="javascript:void(0);"><i class="fa fa-dashboard"></i> Главная</a></li>
+            <li>Лояльность</li>
+            <li class="active">Лояльность</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <!-- Left section -->
+            <section class="col-lg-6">
+                <div class="row">
+                    <!-- Loyalty Settings -->
+                    <div class="col-md-12">
+                       <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Настройки лояльности</h3>
+                            </div>
+                            <form role="form">
+                              <!-- Box content -->
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label>Часовой пояс (<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">список</a>)</label>
+                                        <input type="text" class="form-control" id="loyalty-timezone" data-toggle="tooltip"
+                                            title="Часовой пояс, в котором бот будет высчитывать время."/>
+                                    </div>
+
+                                    <!-- Add offline time to user -->
+                                    <div class="form-group">
+                                        <label for="time-offline">Учитывать время в чате вне стрима</label>
+                                        <div class="dropdown">
+                                            <select class="form-control" id="time-offline" style="cursor: pointer;">
+                                                <option>Да</option>
+                                                <option>Нет</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <!-- Auto add users to regulars -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="time-promote">Автоматически переводить в группу "Всегдатаи"</label>
+                                                <div class="dropdown">
+                                                    <select class="form-control" id="time-promote" style="cursor: pointer;">
+                                                        <option>Да</option>
+                                                        <option>Нет</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Say something in chat when auto promoted. -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="time-promote-notice">Информировать чат об авто-переведении</label>
+                                                <div class="dropdown">
+                                                    <select class="form-control" id="time-promote-notice" style="cursor: pointer;">
+                                                        <option>Да</option>
+                                                        <option>Нет</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <!-- Regular promotion hours -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Количество часов для перевода</label>
+                                                <input type="number" class="form-control" id="loyalty-promotion" placeholder="15" data-toggle="tooltip"
+                                                  />
+                                            </div>
+                                        </div>
+
+                                        <!-- Top list.-->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Количество пользователей в топе</label>
+                                                <input type="number" class="form-control" id="loyalty-top" max="15" data-toggle="tooltip"
+                                                    title="Количество пользователей, показанных в команде !toptime (максимум - 15)."/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Box footer -->
+                                <div class="box-footer">
+                                    <button type="button" class="btn btn-primary pull-right" id="loyalty-save-all"> Сохранить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right section -->
+            <section class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Менеджер лояльности</h3>
+                            </div>
+                            <form role="form">
+                                <!-- Box content -->
+                                <div class="box-body">
+                                    <!-- Username -->
+                                    <div class="form-group">
+                                        <label>Ник</label>
+                                        <input type="text" class="form-control" id="time-username" placeholder="PhantomBot"  data-toggle="tooltip" title="Пользователь, которому нужно изменить накопленное время-пребывания в чате.">
+                                    </div>
+
+                                    <!-- Number of points -->
+                                    <div class="form-group">
+                                        <label>Время (в секундах)</label>
+                                        <div class="input-group input-group-md">
+                                            <input type="number" class="form-control" id="time-username-time" placeholder="0" data-toggle="tooltip" title="Сумма накопленного времени, которое будет иметь пользователь.">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-success btn-flat" id="time-get-user" data-toggle="tooltip"
+                                                   >Показать текущее</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Box footer -->
+                                <div class="box-footer">
+                                    <button type="button" class="btn btn-primary pull-right" id="time-save-user" data-toggle="tooltip"> Сохранить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- loyalty -->
+    <script src="/panel/js/pages/loyalty/loyalty.js"></script>
+</main>

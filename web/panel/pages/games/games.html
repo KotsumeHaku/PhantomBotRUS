@@ -1,0 +1,245 @@
+<!--
+    Copyright (C) 2016-2021 phantombot.github.io/PhantomBot
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<main>
+    <!-- Header -->
+    <section class="content-header">
+        <h1>Игры</h1>
+        <ol class="breadcrumb">
+            <li><a href="javascript:void(0);"><i class="fa fa-dashboard"></i> Главная</a></li>
+            <li class="active">Игры</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <!-- Adventure game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="adventureSystemToggle" data-game-toggle="./games/adventureSystem.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" id="adventureSystemSettings" class="btn btn-md btn-box-tool" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Приключения</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Отправьте ваших зрителей в поисках приключений и зарабатывать на этом.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Roulette game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="rouletteToggle" data-game-toggle="./games/roulette.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" id="rouletteSettings" class="btn btn-md btn-box-tool" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Русская Рулетка</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Дайте своим зрителям револьвер и испытайте их удачу!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Slot Machine game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="slotMachineToggle" data-game-toggle="./games/slotMachine.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" id="slotMachineSettings" class="btn btn-md btn-box-tool" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Слоты</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Дёрни за рычаг и получи результат.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Dice Roll game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="rollToggle" data-game-toggle="./games/roll.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" id="rollSettings" class="btn btn-md btn-box-tool" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Бросок костей</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Просто бросить кубики-кости.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Gambling game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="gamblingToggle" data-game-toggle="./games/gambling.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" id="gamblingSettings" class="btn btn-md btn-box-tool" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Азарт</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Дайте возможность вашим зрителям потратить деньги в один миг!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Kill game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="killCommandToggle" data-game-toggle="./games/killCommand.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" id="killCommandSettings" class="btn btn-md btn-box-tool" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Смерть</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Позвольте вашим зрителям убивать друг-друга в чате.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- 8ball game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="8ballToggle" data-game-toggle="./games/8ball.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" class="btn btn-md btn-box-tool disabled" data-toggle="tooltip" title="This module doesn't have any settings." style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg disabled"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Волшебный шар</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">Вопросы? Проблемы? Спросите у волшебного шара и он вам поможет.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Random game -->
+            <div class="col-md-4">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <div class="box-tools pull-right">
+                           <label class="switch" data-toggle="tooltip" title="Переключить">
+                               <input type="checkbox" id="randomToggle" data-game-toggle="./games/random.js" checked>
+                               <span class="slider round"></span>
+                            </label>
+
+                            <button type="button" class="btn btn-md btn-box-tool" id="randomSettings" data-toggle="tooltip" style="margin-bottom: 7px;">
+                                <i class="fa fa-cog fa-lg"></i>
+                            </button>
+                        </div>
+                        <h3 class="box-title">Случайная команда</h3>
+                    </div>
+
+                    <form role="form">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <p class="auto-cut">О нет...</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- games -->
+    <script src="/panel/js/pages/games/games.js"></script>
+</main>

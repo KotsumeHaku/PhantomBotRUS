@@ -1,0 +1,104 @@
+<!--
+    Copyright (C) 2016-2021 phantombot.github.io/PhantomBot
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<main>
+    <!-- Header -->
+    <section class="content-header">
+        <h1>Аукцион
+            <label class="switch" data-toggle="tooltip" title="Переключить">
+                <input type="checkbox" id="auctionSystemModuleToggle" checked>
+                <span class="slider round"></span>
+            </label>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li><a href="javascript:void(0);"><i class="fa fa-dashboard"></i> Главная</a></li>
+            <li>Раздача</li>
+            <li class="active">Аукцион</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <!-- Poll menu -->
+            <div class="col-md-8">
+               <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Аукцион</h3>
+                    </div>
+
+                    <form role="form" id="auctionOptions">
+                        <!-- Box content -->
+                        <div class="box-body">
+                            <!-- Minimum bet -->
+                            <div class="form-group">
+                                <label for="auction-bet">Минимальная ставка</label>
+                                <input type="number" min="1" class="form-control" id="auction-bet" value="1"
+                                    data-toggle="tooltip"/>
+                            </div>
+
+                            <!-- Increments -->
+                            <div class="form-group">
+                                <label for="auction-inc">Инкременты</label>
+                                <input type="number" min="1" class="form-control" id="auction-inc" value="1"
+                                    data-toggle="tooltip" title="Инкременты, которые будут использованы. 5 позволить ставить только на: 5, 10, 15, 20, 25 и т.д."/>
+                            </div>
+
+                            <!-- Eligibility -->
+                            <div class="form-group">
+                                <label for="auction-perm">Право на участие</label>
+                                <select class="form-control" id="auction-perm">
+                                    <option value="subscribers">Подписчики</option>
+                                    <option value="regulars">Всегдатаи</option>
+                                    <option selected="selected" value="viewers">Все</option>
+                                </select>
+                            </div>
+
+                            <!-- Timer -->
+                            <div class="form-group">
+                                <label for="auction-timer">Таймер (в секундах)</label>
+                                <input type="number" min="0" class="form-control" id="auction-timer" value="0"
+                                    data-toggle="tooltip" title="Сколько аукцион будет открыт. 0 - пока вы не закроете вручную."/>
+                            </div>
+
+                            <!-- Show results -->
+                            <div class="form-group" style="padding-top: 50px; text-align: center;">
+                                <p style="font-size: 25px;"><b>Босс:</b> <span style="font-size: 20px;" id="auction-top-bidder">PhantomBot</span>
+                                    <b><span style="margin-left: 10%;">Очков:</span></b> <span style="font-size: 20px;" id="auction-points">0</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Footer with buttons -->
+                        <div class="box-footer">
+                            <div class="btn-toolbar pull-right">
+                                <button class="btn btn-success" type="button" id="open-or-close-auction"><i class="fa fa-unlock-alt"></i>&nbsp; Открыть</button>
+                                <button class="btn btn-danger" type="button" id="reset-auction"><i class="fa fa-trash"></i>&nbsp; Сброс</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Twitch chat. -->
+            <div class="col-md-4">
+                <div id="twitch-chat-auction"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- auctions -->
+    <script src="/panel/js/pages/giveaways/auction.js"></script>
+</main>

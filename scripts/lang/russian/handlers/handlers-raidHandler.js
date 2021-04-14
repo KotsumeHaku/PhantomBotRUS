@@ -1,0 +1,16 @@
+$.lang.register('raidhandler.inc.message.set', 'Обновлено сообщение о входящем рейде!');
+$.lang.register('raidhandler.inc.message.usage', '[Оповещение о входящем рейде] Использование: !raid setincomingmessage [сообщение] - Переменные: (username), (viewers), (url), (times) and (game)');
+$.lang.register('raidhandler.lookup.usage', '[Проверить пользователя на рейды] Использование: !raid lookup [ник]');
+$.lang.register('raidhandler.lookup.user', '$1 рейдил этот канал $2 раз(а). Крайний был $3 с $4 зрителями.');
+$.lang.register('raidhandler.lookup.user.404', '$1 никогда не рейдил этот канал. SadCat');
+$.lang.register('raidhandler.new.inc.message.set', 'Обновлено оповещение о входящем рейде!');
+$.lang.register('raidhandler.new.inc.message.usage', '[Оповещение о входящем рейде] Использование: !raid setnewincomingmessage [message] - Переменные: (username), (viewers), (url), and (game)');
+$.lang.register('raidhandler.out.message.set', 'Обновлено оповещение об исходящем рейде!');
+$.lang.register('raidhandler.out.message.usage', '[Оповещение об исходящем рейде] Использование: !raid setoutgoingmessage [сообщение] - Переменные: (username) and (url)');
+$.lang.register('raidhandler.reward.set', 'Установлена награда в размере $1.');
+$.lang.register('raidhandler.reward.usage', '[Награда за рейд] Использование: !raid setreward [сумма]');
+$.lang.register('raidhandler.spam.amount.set', 'Обновлено кол-во сообщений при исходящем рейде!');
+$.lang.register('raidhandler.spam.amount.usage', '[Спам о исходящем рейде] Использование: !raid setoutgoingmessagespam [кол-во сообщений] - (Максимум - 10)');
+$.lang.register('raidhandler.toggle.disabled', 'Оповещения о рейдах были отключены.');
+$.lang.register('raidhandler.toggle.enabled', 'Оповещения о рейдах были включены.');
+$.lang.register('raidhandler.usage', '[Система Рейдов] Использование: !raid [ник] | !raid [toggle / lookup / setreward / setincomingmessage / setnewincomingmessage / setoutgoingmessage / setoutgoingmessagespam]');

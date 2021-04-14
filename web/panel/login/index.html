@@ -1,0 +1,95 @@
+<!--
+    Copyright (C) 2016-2020 phantombot.github.io/PhantomBot
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Авторизация</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="/panel/vendors/bootstrap/css/bootstrap.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="/panel/vendors/adminlte/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="/panel/vendors/adminlte/css/skins/skin-purple.min.css">
+        <!-- Google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        <!-- Custom style for the body height -->
+        <style>
+            body {
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <!-- Main body -->
+    <body class="hold-transition login-page">
+        <div class="login-box">
+            <div class="login-logo">
+                <a href="https://phantombot.github.io/PhantomBot"><b>Phantom</b>Bot</a>
+              <br>
+              <a href="https://mdts-forum.rf.gd"><u>Translated by Modetass</u></a>
+            </div>
+
+            <div class="login-box-body">
+                <p class="login-box-msg">Войдите для доступа к панели управления</p>
+
+                <form action="/panel/login" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="username" name="user" class="form-control" placeholder="Логин">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="password" name="pass" class="form-control" placeholder="Пароль">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 pull-right">
+                            <input type="hidden" id="kickback" name="kickback" value="">
+                            <button type="submit" id="login-button" class="btn btn-primary btn-block btn-flat">Войти</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- this could link to a how-to reset the password guide -->
+                <!-- <a href="#">Unable to login?</a><br> -->
+            </div>
+        </div>
+
+        <!-- jQuery 3 -->
+        <script src="/panel/vendors/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="/panel/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+        <script>
+            $(function () {
+                var search = window.location.search.substr(1);
+                var kvs = search.split('&');
+                var searchmap = [];
+                var spl;
+
+                for (var i = 0; i < kvs.length; i++) {
+                    spl = kvs[i].split('=', 2);
+                    searchmap[spl[0]] = spl[1];
+                }
+
+                if (searchmap['kickback']) {
+                    $('#kickback').val(searchmap['kickback']);
+                }
+            });
+        </script>
+    </body>
+</html>
