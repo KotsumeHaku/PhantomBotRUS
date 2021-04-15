@@ -14,9 +14,9 @@
 
 ##### Веб-панель
 
-![](C:\Users\CTPAWHO\Desktop\1.png)
+![](1.png)
 
-![](C:\Users\CTPAWHO\Desktop\2.png)
+![](2.png)
 
 ## Требования
 
