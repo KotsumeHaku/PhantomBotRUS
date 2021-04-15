@@ -4,7 +4,7 @@
 
 ---
 
-[![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com) https://img.shields.io/badge/version-1.2-blue
+[![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com)
 
 ---
 
@@ -16,9 +16,9 @@
 
 ##### Веб-панель
 
-![](C:\Users\CTPAWHO\Desktop\Screenshot_22.png)
+![](1.png)
 
-![](C:\Users\CTPAWHO\Desktop\Screenshot_23.png)
+![](2.png)
 
 ## Требования
 
