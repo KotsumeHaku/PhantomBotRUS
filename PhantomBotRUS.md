@@ -1,24 +1,22 @@
 # PhantomBotRUS
 
-Рабочий перевод проекта PhantomBot на русский язык.
+Перевод на русский язык для проекта [PhantomBot](https://github.com/PhantomBot/PhantomBot)
 
----
-
-[![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com)
+![](https://img.shields.io/badge/first%20release-10%20September%202020-orange)![](https://img.shields.io/github/last-commit/modetass/phantombotrus)![](https://img.shields.io/github/v/release/modetass/phantombotrus) ![](https://img.shields.io/badge/progress-70%25-yellowgreen)
 
 ---
 
 ## Особенности
 
-На данный момент переведена вся веб-панель, кроме всплывающих окон и таблиц и много ответов в чате. В моих планах, как и полагается, довести всё до 100% (покрайней мере для текущей стабильной версии).
+На данный момент переведена вся веб-панель, кроме всплывающих окон и таблиц и много ответов в чате. В моих планах, как и полагается, довести всё до 100% (по крайней мере для текущей стабильной версии).
 
 ## Скриншоты
 
 ##### Веб-панель
 
-![](1.png)
+![](C:\Users\CTPAWHO\Desktop\1.png)
 
-![](2.png)
+![](C:\Users\CTPAWHO\Desktop\2.png)
 
 ## Требования
 
@@ -29,3 +27,7 @@
 [GitHub](https://github.com/modetass/PhantomBotRUS/releases)
 
 [Наш Сайт](https://mdts-forum.rf.gd/forumdisplay.php?fid=13)
+
+## Инструкция по установке
+
+На обоих сайтах вы можете выбрать между установщиком и архивом. В первом варианте вы указываете расположение бота в качестве пути установки, а во втором просто распаковываете в корневую папку бота (там где launch.bat).
