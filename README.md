@@ -2,7 +2,7 @@
 
 Перевод на русский язык проекта [PhantomBot](https://github.com/PhantomBot/PhantomBot)
 
-![](https://img.shields.io/badge/latest%20release-14%20April%202021-red) ![](https://img.shields.io/badge/first%20release-10%20September%202020-orange) ![](https://img.shields.io/github/release-date/modetass/phantombotrus) ![](https://img.shields.io/github/v/release/modetass/phantombotrus) ![](https://img.shields.io/badge/progress-70%25-yellowgreen)
+![](https://img.shields.io/badge/latest%20release-14%20April%202021-red) ![](https://img.shields.io/badge/first%20release-10%20September%202020-orange) ![](https://img.shields.io/github/v/release/modetass/phantombotrus) ![](https://img.shields.io/badge/progress-70%25-yellowgreen)
 
 ---
 
