@@ -20,7 +20,7 @@
 
 ## Требования
 
-Нужен сам [PhantomBot](https://github.com/PhantomBot/PhantomBot), как минимум версии 3.4.2 (иначе **возможны** проблемы с совместимостью).
+Нужен сам [PhantomBot](https://github.com/PhantomBot/PhantomBot), как минимум версии 3.4.2 для Windows (иначе **возможны** проблемы с совместимостью).
 
 ## Скачать
 
